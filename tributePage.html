@@ -1,6 +1,11 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
 <main id="main">
+  
   <h1 id="title">Jane Austen</h1>
+  
   <p id="subtitle">English author 1775-1817</p>
+  
   <!--image and caption/Bildunterschrift-->
   <figure id="img-div">
     <img id="image"  src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Jane_Austen_coloured_version.jpg" alt="Picture of Jane Austen"/>
@@ -8,31 +13,63 @@
      Portrait of Jane Austen.
     </figcaption>
   </figure>
-    
+  
+   <!--About her life-->
     <section id="tribute-info">
       <h2 id="heading-life">Life</h2>
       <p id="life">
-        Jane Austen was born on 16th December 1775 in Steventon, England. <br> 
-        Her father was a clergyman and her mother stemmed from a wealthy family. <br> 
-        Early on in her life Jane Austen had an interest in literature. <br> 
-        She would write poems, stories and even plays for herself or for entertaining her family. <br> 
-        In her late teens or early twenties she began writing full-length novels, <br> 
-        the first of which was "Sense and Sensibiliy" which wasn't published until 1811. <br> 
-        During Jane Austen's lifetime she published four novels in her lifetime. <br> 
-        Another three of her novels were published after her death in 1817.
-        
+        Jane Austen was born on 16th December 1775 in Steventon, England. <br> Her father was a clergyman and her mother came from a wealthy family. <br> Early on in her life she showed an interest in literature. <br> She would write poems, stories and even plays for herself or for entertaining her family. <br> In her late teens or early twenties she began writing full-length novels, <br> the first of which was <i>Sense and Sensibiliy</i>, which wasn't published until 1811. <br> During Jane Austen's lifetime she published four novels. <br> Another three of her novels were published after her death in 1817.</p>
+      
+    <!--About her publications-->
       <h2 id="heading-works">Works</h2>
-      <p id="works">
-        1811 Sense and Sensibility <br>
-        1813 Pride and Prejudice <br>
-        1814 Mansfield Park <br>
-        1815 Emma <br>
-        1818 Northanger Abbey <br>
-        1818 Persuasion <br>
-        1871 Lady Susan
-      </p>
-    <!--text with link to wikiwand page which opens in new tab-->
-
-    <h3>You can find more information about Jane Austen on <a id="tribute-link" href="https://www.wikiwand.com/en/Jane_Austen" target="_blank">this page</a>.</h3>
+   <!--By hovering over image, title and year appear;
+ by clicking on title, wikipedia entry opens in new
+tab-->
+      <div class="row">
+  <div class="column">
+    <img id="sense-and-sensibility" src="https://upload.wikimedia.org/wikipedia/commons/7/77/Sense_and_Sensibility_Illustration_Chap_46.jpg" alt="Sense and Sensibility" class="image"><div class="overlay">
+    <div class="text"><a href="https://www.wikiwand.com/en/Sense_and_Sensibility">Sense and Sensibility 1811</a></div>
+  </div>
+  </div>
+       
+  <div class="column">
+    <img id="pride-and-prejudice" src="https://upload.wikimedia.org/wikipedia/commons/2/22/PrideandPrejudiceCH3.jpg" alt="Pride and Prejudice" class="image"><div class="overlay">
+    <div class="text"><a href="https://www.wikiwand.com/en/Pride_and_Prejudice">Pride and Prejudice 1813</a></div>
+  </div>
+  </div>
+        
+  <div class="column">
+    <img id="mansfield-park" src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Thomson-MP-ch48.JPG" alt="Mansfield Park" class="image"><div class="overlay">
+    <div class="text"><a href="https://www.wikiwand.com/en/Mansfield_Park">Mansfield Park 1814</a></div>
+  </div>
+  </div>
+        
+    <div class="column">
+    <img id="emma" src="https://upload.wikimedia.org/wikipedia/commons/5/58/Houghton_Typ_805.98.1770_-_Emma%2C_p_444.jpg" alt="Emma" class="image"><div class="overlay">
+      <div class="text"><a href="https://www.wikiwand.com/en/Emma_(novel)">Emma 1815</a></div>
+  </div>
+  </div>
+        
+        <div class="column">
+    <img id="northanger-abbey" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Northanger_Abbey_CE_Brock_Vol_II_chap_IX.jpg" alt="Northanger Abbey" class="image"><div class="overlay">
+    <div class="text"><a href="https://www.wikiwand.com/en/Northanger_Abbey">Northanger Abbey 1818</a></div>
+  </div>
+  </div>
+        
+         <div class="column">
+    <img id="persuasion" src="https://upload.wikimedia.org/wikipedia/commons/5/55/Thomson-ch8-Mrs_Musgrove.JPG" alt="Persuasion" class="image"><div class="overlay">
+           <div class="text"><a href="https://www.wikiwand.com/en/Persuasion_(novel)">Persuasion 1818</a></div>
+  </div>
+  </div>
+        
+           <div class="column">
+    <img id="lady-susan" src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Lady_Susan.png" alt="Lady Susan" class="image"><div class="overlay">
+             <div class="text"><a href="https://www.wikiwand.com/en/Lady_Susan">Lady Susan 1871</a></div>
+  </div>
+  </div>
+</div>
+      
+    <!--text with link to wikiwand and goodreads page which opens in new tab-->
+    <h4>You can find more information about Jane Austen's life and work on <a id="tribute-link" href="https://www.wikiwand.com/en/Jane_Austen" target="_blank">Wikipedia</a> and on <a id="goodreads-link" href="https://www.goodreads.com/author/show/1265.Jane_Austen" target="_blank">Goodreads</a>.</h4>
   </section>          
 </main>
