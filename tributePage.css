@@ -1,9 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   font-family: Cambria;
   text-align: center;
   background-color: #FAEBD7;
   font-size: 23px;
 }
+
+#title {
+  margin-top: 20px;
+}
+
+#subtitle {
+  padding: 1em;
+}
+
 /*Image of Jane Austen*/
 #img-div {
   background-color: #FFFAF0;
@@ -20,117 +35,92 @@ html {
 }
 
 /*Her life*/
+#heading-life {
+  padding: 1em;
+}
+
 #life {
   text-align: center;
   line-height: 1.6;
   background-color: #FFFAF0;
 }
 
-/* Seven image containers for her works*/
-.column {
-  float: left;
-  width: 200px;
-  padding: 7px;
-  position: relative;
-  background-color: #FFFAF0;
+/* works */
+#heading-works {
+  padding: 1em;
 }
 
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-#sense-and-sensibility {
-  border-radius: 20%;
-  width: 200px;
-  height: 300px;
-}
-
-#pride-and-prejudice {
-  border-radius: 20%;
-  width: 200px;
-  height: 300px;
-}
-
-#mansfield-park{
-  border-radius: 20%;
-  width: 200px;
-  height: 300px;
-}
-
-#emma {
-  border-radius: 20%;
-  width: 200px;
-  height: 300px;
-}
-
-#northanger-abbey {
-  border-radius: 20%;
-  width: 200px;
-  height: 300px;
-}
-
-#persuasion {
-  border-radius: 20%;
-  width: 200px;
-  height: 300px;
-}
-
-#lady-susan {
-  border-radius: 20%;
-  width: 200px;
-  height: 300px;
-}
-
-/*By hovering over a picture the title & link appear*/
-.image {
-  display: block;
+/* Seven image box for her works in flexcontainer */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 97%;
-  width: 95%;
-  opacity: 0;
-  transition: .5s ease;
   background-color: #FFFAF0;
-  border-radius: 20%;
-  border-style: solid;
-  border-width: 5px;
-  border-color: white;
 }
 
-.column:hover .overlay {
-  opacity: 1;
+/* style columns */
+.column {
+  position: relative;
+  text-align: center;
+  height:300px;
+  width: 230px;
 }
 
+/* hide text behind img */
 .text {
-  color: black;
-  font-size: 40px;
-  font-style: italic;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  visibility: hidden;
+}
+
+/* fit img to column */
+.column > img {
+  border-radius: 20%;
+  width: 200px;
+  height: 300px;
+  visibility: visible;
+}
+
+/* create border when hovering over */
+.column:hover {
+  border: 5px solid #E9967A;
+  border-radius: 20%;
+  width: 200px;
+  height: 300px;
+}
+
+/* hide img when hovering over */
+.column:hover img {
+  visibility: hidden;
+}
+
+/* show text/links when hovering over */
+.column:hover a {
+  visibility: visible;
+  color: black;
+  text-decoration: none;
+  font-size: 38px;
+  text-shadow: 2px 2px #E9967A;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.column {
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+  
+ 
+h4 {
+  padding: 1em;
 }
 
 a {
-  text-decoration: none;
-  color: #DDA0DD;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, 
-make the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-.column {
-    width: 50%;  
+    color: #E9967A;
 }
