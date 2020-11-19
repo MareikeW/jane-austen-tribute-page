@@ -8,4 +8,4 @@ working with ids, image, and external links.
 For building the page I used HTML and CSS.
 
 Link to my tribute page:
-https://codepen.io/Mareike91/full/abbNOXw
+jane-austen-tribute.netlify.app
